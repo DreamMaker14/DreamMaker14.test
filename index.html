@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab2Q4</title>
+    </head>
+
+    <body>
+        <form method="post" action="send.php">
+            <img src="mmu_ebeeluv.png">
+            <p><strong>What kind of car would you like to buy?</strong></p>
+                <input type="radio" name="car" value="proton" checked>Proton
+                <input type="radio" name="car" value="honda">Honda
+                <input type="radio" name="car" value="honda">Ferrari
+                <input type="radio" name="car" value="honda">Ford
+            <p><strong>What colour do you want on your car?</strong></p>
+                <select name="Colour">
+                    <option value="white">White</option>
+                    <option selected value="red">Red</option>
+                    <option value="black">Black</option>
+                    <option value="blue">Blue</option>
+                </select>
+            Other: <input type="text" size="26" maxlength="256" name="otherColor">
+            <p><strong>Enter other specification of your preferred car:</strong></p>
+            <textarea name="specification" rows="5" cols="42"></textarea>
+            <p><strong>Tell us how to get in touch with you:</strong></p>
+            
+            <table>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" name="Username" size="35" maxlength="256"></td>
+                </tr>
+                <tr>
+                    <td>E-mail</td>
+                    <td><input type="text" name="UserEmail" size="35" maxlength="256"></td>
+                </tr>
+                <tr>
+                    <td>Tel</td>
+                    <td><input type="text" name="UserTel" size="35" maxlength="256"></td>
+                </tr>
+                <tr>
+                    <td>FAX</td>
+                    <td><input type="text" name="UserFAX" size="35" maxlength="256"></td>
+                </tr>
+            </table>
+        
+            <br>
+
+            <input type="checkbox" name="ContactRequested" value="ContactRequested"> Please contact me as soon as possible regarding this matter.
+
+            <p>
+                <input type="submit" name="submit" value="Submit">
+                <input type="reset" name="reset" value="Clear">
+            </p>
+        </form>
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-analytics.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+              apiKey: "AIzaSyBRT2B6kTDrOWZ5m8AtD4-t2TtB7INOaTM",
+              authDomain: "test-9add8.firebaseapp.com",
+              projectId: "test-9add8",
+              storageBucket: "test-9add8.appspot.com",
+              messagingSenderId: "523834936088",
+              appId: "1:523834936088:web:ded2485de22035e41f6c6d",
+              measurementId: "G-67S0FVY595"
+            };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+          </script>
+    </body>
+</html>
